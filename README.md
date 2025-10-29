@@ -1,4 +1,4 @@
 # Bilgisayar Mühendisliğine Giriş
 
-**Name:** [Saad EL Kounty]  
-**Student Number:** [16008121112]
+**Ad:** [Saad EL kounty]  
+**Öğrenci Numarası:** [16008121112]
