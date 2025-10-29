@@ -1,39 +1,39 @@
-def add(a, b):
+def topla(a, b):
     return a + b
 
-def subtract(a, b):
+def cikar(a, b):
     return a - b
 
-def multiply(a, b):
+def carp(a, b):
     return a * b
 
-def divide(a, b):
+def bol(a, b):
     if b == 0:
-        return "Error: Cannot divide by zero"
+        return "Hata: Sıfıra bölme yapılamaz."
     return a / b
 
 def main():
-    print("Simple Calculator")
-    print("Operations: +, -, *, /")
+    print("Basit Hesap Makinesi")
+    print("İşlemler: +, -, *, /")
 
     try:
-        num1 = float(input("Enter first number: "))
-        op = input("Enter operation (+, -, *, /): ")
-        num2 = float(input("Enter second number: "))
+        sayi1 = float(input("Birinci sayıyı girin: "))
+        islem = input("İşlem seçin (+, -, *, /): ")
+        sayi2 = float(input("İkinci sayıyı girin: "))
 
-        if op == '+':
-            print("Result:", add(num1, num2))
-        elif op == '-':
-            print("Result:", subtract(num1, num2))
-        elif op == '*':
-            print("Result:", multiply(num1, num2))
-        elif op == '/':
-            print("Result:", divide(num1, num2))
+        if islem == '+':
+            print("Sonuç:", topla(sayi1, sayi2))
+        elif islem == '-':
+            print("Sonuç:", cikar(sayi1, sayi2))
+        elif islem == '*':
+            print("Sonuç:", carp(sayi1, sayi2))
+        elif islem == '/':
+            print("Sonuç:", bol(sayi1, sayi2))
         else:
-            print("Invalid operation")
+            print("Geçersiz işlem seçtiniz.")
 
     except ValueError:
-        print("Error: Please enter valid numbers.")
+        print("Hata: Lütfen geçerli bir sayı girin.")
 
 if __name__ == "__main__":
     main()
